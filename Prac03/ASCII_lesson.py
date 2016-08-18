@@ -1,4 +1,3 @@
-
 def main():
     lower = 48
     upper = 123
@@ -13,12 +12,13 @@ def get_number(lower, upper):
     while not valid_input:
         try:
             user_number = int(input(">>> "))
-            while user_number <= lower or user_number >= upper:
+            if user_number <= lower or user_number >= upper:
                 print("Please enter a valid number!")
-                user_number = int(input(">>> "))
-            valid_input = True
-            return user_number
+            else:
+                valid_input = True
         except ValueError:
             print("Please enter a valid number!")
+    return user_number
+
 
 main()

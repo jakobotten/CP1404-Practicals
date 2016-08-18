@@ -20,4 +20,5 @@ def convert_score(score):
     else:
         return "Bad"
 
+
 main()
