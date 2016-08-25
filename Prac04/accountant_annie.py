@@ -17,4 +17,5 @@ def display_report(incomes):
         total_income += income
         print("Month  {} - Income: $ {:8.2f} Total: $ {:8.2f}".format(count, income, total_income))
         count += 1
+
 main()
